@@ -1,0 +1,132 @@
+
+
+/* Initial body */
+body {
+	left: 0px;
+	margin: 0px;
+	overflow: auto;
+	position: relative;
+	
+ }
+
+/* Initial menu */
+.menu {
+	background: url(couffieh.jpg);
+	left: -285px; /* start off behind the scenes */
+	height: 100%;
+	position: fixed;
+	width: 285px;
+	overflow:auto;
+ }
+
+/* Basic styling */
+.jumbotron {
+	height: 100%;
+	width: 100%;
+	background-image: url(Palestine_flag_fluttering_in_the_sky_of_the_city_of_Ramallah.JPG);
+	position: fixed;
+	overflow: auto;
+	
+ }
+
+.menu ul {
+	border-top: 1px solid #636366;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+ }
+
+.menu li {
+	border-bottom: 1px solid #636366;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 45px;
+	padding-bottom: 3px;
+	padding-left: 20px;
+	padding-top: 3px;
+	color: #F00;
+	background-color: black;
+	transition: background-color 1s ease;
+ }
+
+.menu a {
+	font-size: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+ }
+
+.icon-close {
+	cursor: pointer;
+	padding-left: 10px;
+	padding-top: 10px;
+	background-color: black;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	font-size: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: background-color 1s ease;
+	position: relative;
+ }
+
+.icon-menu {
+	cursor: pointer;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+
+	padding-left: 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-right: 800px;
+	padding-top: 25px;
+	oveflow:auto;
+	
+	
+ }
+
+	.icon-menu i {margin-right: 5px;}
+
+.active {
+	border-bottom: 1px solid #636366;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 45px;
+	padding-bottom: 3px;
+	padding-left: 20px;
+	padding-top: 3px;
+	color: #F00;
+	background-color: green;
+ }
+
+.form {
+	display: none;
+	position: relative;
+	font-size:20px;
+	border: 1px solid #636366;
+background-color: white;
+color:#666;
+	opacity:.90;
+ }
+
+body div .Step1 {display: none}
+
+body div.Step2 {display: none}
+
+body div .Step3 {display: none}
+
+body div .instructions {
+	background-color:transparent;
+	
+}
+.highlight{
+	background:white;
+	border: 3px solid #636366;
+	font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+	font-style:normal;
+	font-variant: normal;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	padding-top: 3px;
+	color: black;
+	text-transform:none;
+}
+

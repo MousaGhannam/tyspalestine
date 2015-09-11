@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+      <link href='style.css' rel='stylesheet'>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <title>TYS Palestine! - Tell Your Story</title>
+      <style type="text/css">
+      body {
+}
+      </style>
+      <script>
+         function loadXMLDoc(senators_cfm)
+         {
+         if (window.XMLHttpRequest)
+           {
+           xhttp=new XMLHttpRequest();
+           }
+         else // code for IE5 and IE6
+           {
+           xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+           }
+         xhttp.open("GET",filename,false);
+         xhttp.send();
+         return xhttp.responseXML;
+         }
+      </script>
+   </head>
+   <body>
+      <div class="menu">
+         <!-- Menu icon -->
+         <div class="icon-close">  Close<img src="arrow.png" width="23" height="20" /></div>
+         <!-- Menu -->
+         <ul>
+            <li id="1"><a href="#">About</a></li>
+            <li id="2"><a href="#">Write a Letter</a></li>
+            <li id="3"><a href="#">Photo Gallery</a></li>
+            <li id="4"><a href="#">Video Gallery</a></li>
+            <li id="5"><a href="#">Recipes</a></li>
+            <li id="5"><a href="#">Literature</a></li>
+         </ul>
+      </div>
+      <!-- Main body -->
+      <div id="pflag" class="jumbotron">
+      <div class="icon-menu">
+         <i class="fa fa-bars"></i>
+         MENU
+         <div class="form">
+            <h1>Reach Out to Your Congressman!:</h1>
+            <form action="form.php" id="usrform" name="usrform" method="get" enctype="text/plain">
+               
+               <label for="fullname">Full name:</label>
+               <input id="fullnamne" type="text" name="SenderName" value="Name" onfocus="if (this.value=='Name') this.value='';"/>
+               <br>
+              <label for="email">Email Address:</label>
+               <input id="email" type="text" name="SenderEmail" value="Email Address" onfocus="if (this.value=='Email Address') this.value='';"/><br />
+               <label for="address">Address:</label>
+               <input id="address" type="text" name="SenderAddress" value="Home Address" onfocus="if (this.value=='Home Address') this.value='';"/><br />
+               <label for="title">Title (E.g Dr., Mrs./Ms., etc.):</label>
+               <input id="title" type="text" name="SenderTitle" value="Title" onfocus="if (this.value=='Title') this.value='';"/><br />
+               <label for="city">City:</label>
+                   <input id="city" type="text" name="SenderCity" value="City" onfocus="if (this.value=='Title') this.value='';"/><br />
+                  <label for="zipcode">Zip Code:</label>
+                       <input id="zipcode" type="text" name="SenderZipcode" value="Zip" onfocus="if (this.value=='Title') this.value='';"/><br />
+                      <label for="phonenumber">Phonenumber:</label>
+                           <input id="phonenumber" type="text" name="SenderPhonenumber" value="Phonenumber" onfocus="if (this.value=='Title') this.value='';"/><br />
+                           
+               <input type="radio" id="SenatorCheck" name="congress-type" value="Scheck" checked>Senator
+               <br>
+              <input type="radio" id="HouseCheck" name="congress-type" value="Hcheck">House Representative
+                
+               <br />
+                           
+              <input type="hidden" id="SenatorAddress" name="SA" />
+              <input type="hidden" id="HouseAddress" name="HA" />
+              
+               Select Your State
+               <select id="StateSelect" name="senatorstates" form="usrform">
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+               </select>
+               <br/>
+               Choose a Senator
+               <select id="SenatorSelect" name="senatornames" form="usrform"></select><br />				Choose a House Member
+              <select id="HouseSelect" name="housenames" form="usrform"></select><br />
+               <input id="StartButton" name="Start" type="button" value="Begin!" />
+               <br/><br/>
+               <div id="class1" class="Step1">
+                  <div class="highlight">Step 1: Start the letter by introducing who you are and why you are writing. List your "credentials". If your letter pertains to a specfic piece of legislation, identify it accordingly in this section. Address only one issue in each letter.</div><br>
+                  <textarea id="usrform"  rows="20" cols="70" name="step1" form="usrform"></textarea><br><br>
+                  <input id="Step1Button" name="Step1B" type="button" value="Next" />
+                  <br/><br/>
+               </div>
+               <div id="class2" class="Step2">
+                  <div class="highlight">Step 2: In this section, expand on what you wrote earlier and provide more detail. Be <strong>factual</strong>, not emotional. Provide specific rather than general information about how the topic affects you and others. If a certain bill is involved, cite the correct <a href="#" title="That&apos;s what this widget is">title or number</a> whenever possible.
+                  With respect to the Palestinian-Israeli conflict, here is where you can described any experiences, dialogues, observations that you, or people that you know, have testififed to. Additionally, you can stick to <a href="http://www.ifamericansknew.org/">statistical evidence</a>, which speaks for itself.</div>  <br /> <br />
+                  <textarea id="usrform" rows="20" cols="70" name="step2" form="usrform"></textarea><br><br>
+                  <input id="Step2Button" name="Step2B" type="button" value="Next" />
+                  <br/><br/>
+               </div>
+               <div id="class3" class="Step3">
+                  <div class="highlight">Step 3: Close your letter by describing the action that you want taken. E.g (a general policy change, a vote for or against a bill, etc.). </div>
+                  <br /><br />
+                  <textarea id="usrform" rows="20" cols="70" name="step3" form="usrform"></textarea><br><br> 
+                 
+                  <input type="submit" value="Submit for Print">
+                  <input type="reset" value="Reset">
+               </div>
+            </form>
+            <br /><br /><br />
+            
+           <div id="#FinalForm" class="final_form"><?php
+echo ("form.php");
+?></div>
+           
+            <div>
+               <a href="[full link to your Twitter]">
+               <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/twitter.png" width="35" height="35" />
+               </a>
+               <a href="[full link to your Pinterest]">
+               <img title="Pinterest" alt="Pinterest" src="https://socialmediawidgets.files.wordpress.com/2014/03/pinterest.png" width="35" height="35" />
+               </a>
+               <a href="[full link to your Facebook page]">
+               <img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/facebook.png" width="35" height="35" />
+               </a>
+               <a href="mailto:[email address]">
+               <img title="Email" alt="Email" src="https://socialmediawidgets.files.wordpress.com/2014/03/email.png" width="35" height="35" />
+               </a>
+               <a href="[full link to your RSS feed]">
+               <img title="RSS" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/rss.png" width="35" height="35" />
+               </a>
+            </div>
+         </div>
+      </div>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="app.js"></script>
+   </body>
+</html>
