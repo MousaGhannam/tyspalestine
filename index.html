@@ -29,7 +29,6 @@
          }
       </script>
    </head>
-   <h1> hello world!!!!</h1>
    <body>
       <div class="menu">
          <!-- Menu icon -->
@@ -52,7 +51,7 @@
          <div class="form">
             <h1>Reach Out to Your Congressman!:</h1>
             <form action="form.php" id="usrform" name="usrform" method="get" enctype="text/plain">
-
+               
                <label for="fullname">Full name:</label>
                <input id="fullnamne" type="text" name="SenderName" value="Name" onfocus="if (this.value=='Name') this.value='';"/>
                <br>
@@ -68,16 +67,16 @@
                        <input id="zipcode" type="text" name="SenderZipcode" value="Zip" onfocus="if (this.value=='Title') this.value='';"/><br />
                       <label for="phonenumber">Phonenumber:</label>
                            <input id="phonenumber" type="text" name="SenderPhonenumber" value="Phonenumber" onfocus="if (this.value=='Title') this.value='';"/><br />
-
+                           
                <input type="radio" id="SenatorCheck" name="congress-type" value="Scheck" checked>Senator
                <br>
               <input type="radio" id="HouseCheck" name="congress-type" value="Hcheck">House Representative
-
+                
                <br />
-
+                           
               <input type="hidden" id="SenatorAddress" name="SA" />
               <input type="hidden" id="HouseAddress" name="HA" />
-
+              
                Select Your State
                <select id="StateSelect" name="senatorstates" form="usrform">
                   <option value="AL">Alabama</option>
@@ -154,18 +153,18 @@
                <div id="class3" class="Step3">
                   <div class="highlight">Step 3: Close your letter by describing the action that you want taken. E.g (a general policy change, a vote for or against a bill, etc.). </div>
                   <br /><br />
-                  <textarea id="usrform" rows="20" cols="70" name="step3" form="usrform"></textarea><br><br>
-
+                  <textarea id="usrform" rows="20" cols="70" name="step3" form="usrform"></textarea><br><br> 
+                 
                   <input type="submit" value="Submit for Print">
                   <input type="reset" value="Reset">
                </div>
             </form>
             <br /><br /><br />
-
+            
            <div id="#FinalForm" class="final_form"><?php
 echo ("form.php");
 ?></div>
-
+           
             <div>
                <a href="[full link to your Twitter]">
                <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/twitter.png" width="35" height="35" />
